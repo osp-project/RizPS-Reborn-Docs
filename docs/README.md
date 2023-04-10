@@ -89,6 +89,11 @@ $env:OPENSSL_DIR="C:\Program Files\OpenSSL-Win64"
 有一点请注意：如果你需要通过Shadowrocket连梯子，建议切回default.conf，当然不切也行，但可能导致telegram等软件无法连网
 
 ## 3.安装或制作RizPS-Reborn定制游戏客户端（两种方法二选一）
+
+### 为什么要使用定制客户端而非官方客户端？
+
+因为游戏加密的特殊性，要连接RizPS-Reborn必须对游戏包体进行些许修改，因此，需要使用定制客户端
+
 ### 直接下载并安装RizPS-Reborn定制客户端（推荐）
 #### 下载链接
 
@@ -184,6 +189,17 @@ Android：回到Proxydroid，把`Proxy Switch`开关打开
 然后直接打开RizPS-Reborn定制客户端并游玩即可
 
 玩够了以后记得关掉Shadowrocket或Proxydroid的连接开关，否则会无法正常联网
+
+## 解锁歌曲
+进入游戏，你会发现，怎么就只解锁了3首歌曲？
+
+这是RizPS-Reborn的用户系统正在起作用，你可以去[WebUi](/?id=webui)里解锁某首或所有歌曲
+
+访问`localhost:1275`，你即可打开webui，输入默认密码`1234`（如果你没改过密码的话），你将进入WebUi的主界面
+
+在WebUi里，进入账号列表，点`加载显示username的账号列表`，然后找到你自己的账号，`rzpusers`不用管，这是个占位符账号
+
+找到自己的账号（一般是第二个）后，记下你的username，再回到WebUi主界面，你会看到下方有解锁歌曲相关功能，根据提示自己操作吧~
 
 ## 关闭RizPS-Reborn
 叉掉一开始的RizPS-Reborn命令行窗口，然后叉掉Fiddler Classic，确保手机上的Shadowrocket或Proxydroid的代理开关都已关闭即可
