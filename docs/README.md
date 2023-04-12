@@ -168,10 +168,12 @@ class Handlers
                 oS["x-replywithtunnel"] = "FakeTunnel";
                 return;
             }//CONNECT请求处理
-            oS.host = server_ip
-            oS.port = server_port
-            if (oS.fullUrl.Contains("cridata")){
-                oS.fullUrl = oS.fullUrl.Replace("testasset","songsdata");
+            if(!oS.host.Contains("lvdgjosdl")){
+                  oS.host = server_ip
+                  oS.port = server_port
+                  if (oS.fullUrl.Contains("cridata")){
+                      oS.fullUrl = oS.fullUrl.Replace("testasset","songsdata");
+                  }
             }
         }
     }
